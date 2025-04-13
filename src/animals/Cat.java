@@ -1,6 +1,7 @@
 package animals;
 
 public class Cat extends Animal implements Mammal, HasFur {
+ private int spineLength;
 
     @Override
     public void eat() {
@@ -15,5 +16,10 @@ public class Cat extends Animal implements Mammal, HasFur {
     @Override
     public void feedWithMilk() {
         System.out.println("Fed the cat");
+    }
+
+    @Override
+    public void setSpineLength(int spineLength) {
+        this.spineLength = spineLength;
     }
 }
